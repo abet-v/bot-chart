@@ -1,6 +1,6 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import datafile from "/Users/abetv/repositories/chart-bot/src/datas/data.json"
+import datafile from "./datas/data.json"
 
 const data = {
   labels: datafile.map((moment, index) => index),
