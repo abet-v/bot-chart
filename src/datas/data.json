@@ -1,0 +1,15 @@
+[{
+    "best": {"coin": "TRX", "usdt_buyed": 108.76, "usdt_now": 109.02, "std": 0.24},
+    "worst": {"coin": "BZRX", "usdt_buyed": 108.76, "usdt_now": 107.08, "std": -1.54},
+    "TRX": {"coin": "TRX", "usdt_buyed": 108.76, "usdt_now": 109.02, "std": 0.24}, 
+    "INJ": {"coin": "INJ", "usdt_buyed": 29.66, "usdt_now": 29.68, "std": 0.06}, 
+    "DCR": {"coin": "DCR", "usdt_buyed": 29.66, "usdt_now": 29.59, "std": -0.24}, 
+    "ADA": {"coin": "ADA", "usdt_buyed": 29.66, "usdt_now": 29.68, "std": 0.07}, 
+    "LUNA": {"coin": "LUNA", "usdt_buyed": 29.66, "usdt_now": 29.59, "std": -0.26}, 
+    "SRM": {"coin": "SRM", "usdt_buyed": 29.66, "usdt_now": 29.7, "std": 0.15}, 
+    "SOL": {"coin": "SOL", "usdt_buyed": 29.66, "usdt_now": 29.57, "std": -0.32}, 
+    "RVN": {"coin": "RVN", "usdt_buyed": 29.66, "usdt_now": 29.71, "std": 0.15}, 
+    "DENT": {"coin": "DENT", "usdt_buyed": 29.66, "usdt_now": 29.67, "std": 0.03}, 
+    "BTT": {"coin": "BTT", "usdt_buyed": 138.42, "usdt_now": 138.52, "std": 0.07}, 
+    "BZRX": {"coin": "BZRX", "usdt_buyed": 108.76, "usdt_now": 107.08, "std": -1.54}
+}]
