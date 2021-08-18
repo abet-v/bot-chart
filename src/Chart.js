@@ -19,6 +19,13 @@ const data = {
         backgroundColor: 'rgb(0, 99, 132)',
         borderColor: 'rgba(0, 99, 132, 0.2)',
     }
+    {
+        label: '% du total',
+        data: datafile.map(moment => moment.total?.std),
+        fill: true,
+        backgroundColor: 'rgb(0, 255, 0)',
+        borderColor: 'rgba(0, 255, 0)',  
+    }
   ],
 };
 
