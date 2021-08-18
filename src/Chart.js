@@ -6,12 +6,19 @@ const data = {
   labels: datafile.map((moment, index) => index),
   datasets: [
     {
-      label: '% de dif',
+      label: '% du worst',
       data: datafile.map(moment => moment.worst.std),
       fill: false,
       backgroundColor: 'rgb(255, 99, 132)',
       borderColor: 'rgba(255, 99, 132, 0.2)',
     },
+    {
+        label: '% du best',
+        data: datafile.map(moment => moment.best.std),
+        fill: false,
+        backgroundColor: 'rgb(0, 99, 132)',
+        borderColor: 'rgba(0, 99, 132, 0.2)',
+    }
   ],
 };
 
