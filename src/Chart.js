@@ -40,8 +40,8 @@ const data = {
             above: 'rgb(0, 255, 0, 0.5)',   // Area will be red above the origin
             below: 'rgb(255, 0, 0, 0.5)'    // And blue below the origin
           },
-        backgroundColor: 'rgb(0, 255, 0)',
-        borderColor: 'rgba(0, 255, 0)',  
+        backgroundColor: 'rgb(0, 0, 0)',
+        borderColor: 'rgba(0, 0, 0)',  
     },
     ...additionalData
   ],
