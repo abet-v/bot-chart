@@ -12,7 +12,6 @@ const additionalData = Object.keys(dayMoney).filter(info => !skiped.includes(inf
         fill: false,
         backgroundColor: 'rgb(110, 120, 110)',
         borderColor: 'rgba(110, 120, 110, 0.2)',
-        z: 1
     }; 
 });
 
@@ -36,9 +35,13 @@ const data = {
     {
         label: '% du total',
         data: datafile.map(moment => moment.total?.std),
-        fill: true,
+        fill: {
+            target: 'origin',
+            above: 'rgb(255, 0, 0, 0.5)',   // Area will be red above the origin
+            below: 'rgb(0, 0, 255, 0.5)'    // And blue below the origin
+          },
         backgroundColor: 'rgb(0, 255, 0)',
-        borderColor: 'rgba(0, 255, 0, 0.5)',  
+        borderColor: 'rgba(0, 255, 0)',  
     },
     ...additionalData
   ],
