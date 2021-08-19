@@ -12,6 +12,7 @@ const additionalData = Object.keys(dayMoney).filter(info => !skiped.includes(inf
         fill: false,
         backgroundColor: 'rgb(110, 120, 110)',
         borderColor: 'rgba(110, 120, 110, 0.2)',
+        z: 1
     }; 
 });
 
@@ -37,7 +38,7 @@ const data = {
         data: datafile.map(moment => moment.total?.std),
         fill: true,
         backgroundColor: 'rgb(0, 255, 0)',
-        borderColor: 'rgba(0, 255, 0, 0.8)',  
+        borderColor: 'rgba(0, 255, 0, 0.5)',  
     },
     ...additionalData
   ],
