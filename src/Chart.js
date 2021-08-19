@@ -37,7 +37,7 @@ const data = {
         data: datafile.map(moment => moment.total?.std),
         fill: true,
         backgroundColor: 'rgb(0, 255, 0)',
-        borderColor: 'rgba(0, 255, 0)',  
+        borderColor: 'rgba(0, 255, 0, 0.8)',  
     },
     ...additionalData
   ],
