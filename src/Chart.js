@@ -2,6 +2,19 @@ import React from 'react';
 import { Line } from 'react-chartjs-2';
 import datafile from "./datas/data.json"
 
+const dayMoney = datafile[0];
+const skiped = ['worst', 'best', 'total', 'time'];
+
+const additionalData = Object.keys(dayMoney).filter(info => !skiped.includes(info)).map(money => {
+    return {
+        label: money,
+        data: datafile.map(moment => moment[money].std),
+        fill: false,
+        backgroundColor: 'rgb(110, 120, 110)',
+        borderColor: 'rgba(110, 120, 110, 0.2)',
+    }; 
+});
+
 const data = {
   labels: datafile.map((moment, index) => moment.time ? moment.time : index),
   datasets: [
@@ -16,8 +29,8 @@ const data = {
         label: '% du best',
         data: datafile.map(moment => moment.best.std),
         fill: false,
-        backgroundColor: 'rgb(0, 99, 132)',
-        borderColor: 'rgba(0, 99, 132, 0.2)',
+        backgroundColor: 'rgb(0, 180, 0)',
+        borderColor: 'rgba(0, 180, 0, 0.2)',
     },
     {
         label: '% du total',
@@ -25,7 +38,8 @@ const data = {
         fill: true,
         backgroundColor: 'rgb(0, 255, 0)',
         borderColor: 'rgba(0, 255, 0)',  
-    }
+    },
+    ...additionalData
   ],
 };
 
@@ -45,7 +59,6 @@ const options = {
 
 const LineChart = () => (
   <>
-  { console.log(datafile)}
     <div className='header'>
       <h1 className='title'>MONEY MONEY DURING THE DAY</h1>
     </div>
