@@ -3,7 +3,7 @@ import { Line } from 'react-chartjs-2';
 import datafile from "./datas/data.json"
 
 const data = {
-  labels: datafile.map((moment, index) => index),
+  labels: datafile.map((moment, index) => moment.time ? moment.time : index),
   datasets: [
     {
       label: '% du worst',
