@@ -37,8 +37,8 @@ const data = {
         data: datafile.map(moment => moment.total?.std),
         fill: {
             target: 'origin',
-            above: 'rgb(255, 0, 0, 0.5)',   // Area will be red above the origin
-            below: 'rgb(0, 0, 255, 0.5)'    // And blue below the origin
+            above: 'rgb(0, 255, 0, 0.5)',   // Area will be red above the origin
+            below: 'rgb(255, 0, 0, 0.5)'    // And blue below the origin
           },
         backgroundColor: 'rgb(0, 255, 0)',
         borderColor: 'rgba(0, 255, 0)',  
